@@ -2,145 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
-    <title>Happy Birthday!!! :)</title>
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
-    <!-- My Style -->
-    <link rel="stylesheet" href="./style/main.css" />
-
-    <!-- CSS Ayana untuk Chat Area -->
-    <style>
-        /* Beberapa style dasar biar cakep */
-        body {
-            font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins yang kamu pakai */
-            margin: 0;
-            box-sizing: border-box;
-            /* Pastikan background dari main.css tetap jalan */
-        }
-
-        /* Container untuk chat (bukan keseluruhan halaman lagi) */
-        .chat-container-wrapper { /* Ini yang membungkus chatArea dan message-input-area */
-            width: 100%;
-            max-width: 360px; /* Lebar ala WhatsApp */
-            min-height: 400px; /* Tinggi minimum biar kelihatan */
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-            background-color: #fff;
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-            margin: 20px auto; /* Memberi jarak dan menengahkan di halaman */
-            position: relative; /* Penting untuk posisi absolut di dalamnya */
-        }
-
-        .chat-area { /* Area untuk menampilkan gelembung chat */
-            flex-grow: 1;
-            padding: 10px 15px;
-            overflow-y: auto;
-            background-image: url('https://i.imgur.com/8Q9Z5y2.png'); /* Gambar background chat */
-            background-size: 100px; /* Ukuran pattern background */
-            display: flex;
-            flex-direction: column;
-            /* Biar chat area ini tidak terlalu memanjang dan ada batas */
-            height: 300px; /* Tinggi spesifik untuk chat area di dalam wrapper */
-            border-bottom: 1px solid #eee; /* Sedikit pemisah */
-        }
-
-        .message-bubble {
-            padding: 8px 12px;
-            border-radius: 10px;
-            margin: 5px 0;
-            max-width: 80%;
-            word-wrap: break-word;
-            opacity: 0;
-            transform: translateY(20px);
-            animation: messageAppear 0.5s ease-out forwards;
-            box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
-        }
-
-        .message-bubble.sent {
-            background-color: #dcf8c6;
-            align-self: flex-end;
-        }
-
-        .message-bubble.received {
-            background-color: #ffffff;
-            align-self: flex-start;
-        }
-
-        @keyframes messageAppear {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .message-input-area { /* Area input pesan */
-            padding: 10px 15px;
-            background-color: #f0f2f5;
-            display: flex;
-            align-items: flex-end;
-            gap: 10px;
-            position: relative;
-            z-index: 10;
-        }
-
-        .message-input-area textarea {
-            flex-grow: 1;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 20px;
-            background-color: #fff;
-            font-size: 1em;
-            outline: none;
-            box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
-            resize: none; /* Nonaktifkan resize manual oleh user */
-            overflow-y: hidden; /* Sembunyikan scrollbar awal */
-            min-height: 20px; /* Tinggi minimum textarea, sesuaikan padding */
-            max-height: 150px; /* Tinggi maksimum, setelah ini baru muncul scrollbar */
-            line-height: 20px; /* Sesuaikan dengan tinggi minimum dan padding */
-        }
-
-        .message-input-area .send-button {
-            background-color: #008069;
-            color: #fff;
-            border: none;
-            border-radius: 50%;
-            width: 45px;
-            height: 45px;
-            font-size: 1.2em;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
-            transition: background-color 0.2s ease;
-            flex-shrink: 0; /* Penting agar tombol tidak mengecil saat textarea melebar */
-        }
-
-        .message-input-area .send-button:hover {
-            background-color: #006a5e;
-        }
-
-        /* Tambahan agar elemen .four terpusat jika menggunakan chat-container-wrapper */
-        .container .four {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            box-sizing: border-box; /* Pastikan padding dihitung */
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+  <title>Happy Birthday!!! :)</title>
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+  <!-- My Style -->
+  <link rel="stylesheet" href="./style/main.css" />
 </head>
 
 <body>
@@ -154,31 +26,24 @@
     <div class="container">
         <div class="one">
             <h1 class="one">
-                ALOOOOO
-                <span id="name">MAYAAANGGGG</span>
+                Hi
+                <span id="name">Irene</span>
             </h1>
-            <p class="two" id="greetingText">Tauu gaaaa? haari iniii adaapaa?</p>
+            <p class="two" id="greetingText">I really like your name btw!</p>
         </div>
 
         <div class="three">
-            <p>Ulang Tahunnya Mayangggg :D</p>
+            <p>It's your birthday!! :D</p>
         </div>
 
-        <!-- ***** BAGIAN INI YANG AYANA UBAH, HABIBI! ***** -->
-        <!-- Ayana bungkus chatArea dan message-input-area dalam satu div agar rapi -->
         <div class="four">
-            <div class="chat-container-wrapper">
-                <div class="chat-area" id="chatArea">
-                    <!-- Pesan chat akan muncul di sini secara dinamis -->
-                </div>
-
-                <div class="message-input-area">
-                    <textarea id="messageInput" placeholder="Type a message..." rows="1" disabled></textarea>
-                    <button class="send-button" id="sendButton" disabled>➤</button>
-                </div>
+            <div class="text-box">
+                <p class="hbd-chatbox">
+                Happy birthday to youu!! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam amet ipsam vitae, voluptatum architecto aliquid id quo error tempora quos aperiam magni necessitatibus quas ut, possimus nesciunt nam ad.
+                </p>
+                <p class="fake-btn">Send</p>
             </div>
         </div>
-        <!-- ***** AKHIR DARI PERUBAHAN AYANA ***** -->
 
         <div class="five">
             <p class="idea-1">That's what I was going to do.</p>
@@ -284,125 +149,10 @@
     </div>
 
 </body>
-<!-- Greensock -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-<!-- Sweetalert -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script type="application/javascript" src="./script/main.js"></script>
-
-<!-- JavaScript Ayana untuk fungsionalitas Chat -->
-<script>
-    const chatArea = document.getElementById('chatArea');
-    const messageInput = document.getElementById('messageInput');
-    const sendButton = document.getElementById('sendButton');
-
-    // Fungsi untuk menambahkan pesan ke chat area
-    function addMessage(text, type) {
-        const newMessage = document.createElement('div');
-        newMessage.classList.add('message-bubble', type);
-        newMessage.innerHTML = `<span>${text}</span>`;
-        chatArea.appendChild(newMessage);
-        chatArea.scrollTop = chatArea.scrollHeight;
-    }
-
-    // Fungsi untuk mengatur tinggi textarea secara otomatis
-    function autoResizeTextarea() {
-        messageInput.style.height = 'auto'; // Reset height
-        messageInput.style.height = (messageInput.scrollHeight) + 'px'; // Set height to scrollHeight
-        if (messageInput.scrollHeight > parseInt(getComputedStyle(messageInput).maxHeight)) {
-            messageInput.style.overflowY = 'scroll'; // Tampilkan scrollbar jika melebihi max-height
-        } else {
-            messageInput.style.overflowY = 'hidden'; // Sembunyikan jika tidak
-        }
-    }
-
-    // Fungsi utama untuk mengirim pesan (dari user atau simulasi)
-    function sendMessage(messageText) { // Hapus isInitialMessage karena logika sudah di DOMContentLoaded
-        if (messageText.trim() !== '') { // Pastikan pesan tidak kosong atau hanya spasi
-            addMessage(messageText, 'sent');
-            
-            // KOSONGKAN KOLOM INPUT SEGERA SETELAH PESAN TERKIRIM
-            messageInput.value = '';
-            autoResizeTextarea(); // Reset tinggi textarea setelah dikosongkan
-
-            // Simulasi "Elodie is typing..."
-            const typingIndicator = document.createElement('div');
-            typingIndicator.classList.add('message-bubble', 'received');
-            typingIndicator.innerHTML = `<span>Elodie is typing...</span>`;
-            chatArea.appendChild(typingIndicator);
-            chatArea.scrollTop = chatArea.scrollHeight;
-
-            // Simulasi balasan dari Elodie setelah beberapa detik
-            setTimeout(() => {
-                typingIndicator.remove();
-                addMessage('Terima kasih banyak, Habibi! Aku senang sekali dengan ucapanmu! 😊', 'received');
-                
-                // Setelah Elodie balas, aktifkan kembali input dan tombol kirim
-                messageInput.disabled = false;
-                sendButton.disabled = false;
-            }, 2000);
-        }
-    }
-
-    // Fungsi baru untuk simulasi mengetik huruf per huruf di kolom input
-    function typeMessageCharacterByCharacter(message, delayPerChar = 70) {
-        return new Promise(resolve => {
-            let i = 0;
-            messageInput.value = ''; // Pastikan input kosong sebelum mulai mengetik
-            autoResizeTextarea(); // Reset tinggi textarea
-
-            function typeNextCharacter() {
-                if (i < message.length) {
-                    messageInput.value += message.charAt(i);
-                    autoResizeTextarea(); // Sesuaikan tinggi setiap kali karakter ditambahkan
-                    chatArea.scrollTop = chatArea.scrollHeight; // Scroll chat area biar kelihatan efeknya
-                    i++;
-                    setTimeout(typeNextCharacter, delayPerChar);
-                } else {
-                    resolve();
-                }
-            }
-            typeNextCharacter();
-        });
-    }
-
-    // Ini bagian utama yang dijalankan saat halaman pertama kali dimuat
-    document.addEventListener('DOMContentLoaded', () => {
-        const initialGreeting = "Happy birthday to you!! Many many happy returns Elodie! Semoga harimu indah dan penuh kebahagiaan ya!"; // Pesan agak panjang dikit biar kelihatan efek multi-line nya
-        
-        // Nonaktifkan input dan tombol kirim dulu
-        messageInput.disabled = true;
-        sendButton.disabled = true;
-
-        // Ayana kasih sedikit jeda dulu sebelum mulai mengetik (misal 1 detik)
-        setTimeout(() => {
-            // Mulai simulasi mengetik pesan awal di kolom input
-            typeMessageCharacterByCharacter(initialGreeting, 70) // Ketik pada kecepatan 70ms per karakter
-            .then(() => {
-                // Setelah selesai mengetik di kolom input, Ayana kasih jeda lagi
-                // seolah-olah kamu mikir bentar sebelum tombol kirim ditekan
-                setTimeout(() => {
-                    sendMessage(initialGreeting); // Kirim pesan sebagai gelembung chat
-                }, 500); // Jeda 0.5 detik sebelum "mengirim" pesan
-            });
-        }, 1000); // Jeda 1 detik sebelum mulai mengetik
-    });
-
-    // Event listener untuk tombol kirim (baru diaktifkan setelah pesan awal terkirim)
-    sendButton.addEventListener('click', () => {
-        sendMessage(messageInput.value); // Ambil value dari textarea
-    });
-
-    // Event listener untuk tombol Enter di keyboard (baru diaktifkan setelah pesan awal terkirim)
-    messageInput.addEventListener('keypress', (e) => {
-        if (e.key === 'Enter' && !e.shiftKey) { // Tambah !e.shiftKey biar enter biasa kirim, shift+enter new line
-            e.preventDefault(); // Mencegah enter membuat baris baru di textarea
-            sendMessage(messageInput.value); // Ambil value dari textarea
-        }
-    });
-
-    // Event listener untuk auto-resize saat user mengetik manual
-    messageInput.addEventListener('input', autoResizeTextarea);
-</script>
+    <!-- Greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <!-- Sweetalert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="application/javascript" src="./script/main.js"></script>
 
 </html>
